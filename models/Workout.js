@@ -6,8 +6,38 @@ const mongoose = require("mongoose");
 const workoutSchema = new mongoose.Schema({
   day: {
     type: Date,
+    default: Date.now,
   },
-  exercises: { type: Array },
+  exercises: [
+    {
+      type: {
+        type: String,
+        trim: true,
+        required: "Type Required",
+      },
+      name: {
+        type: String,
+        trim: true,
+        required: "Name Required",
+      },
+      duration: {
+        type: Number,
+        required: "Duration Required (minutes)",
+      },
+      weight: {
+        type: Number,
+      },
+      distance: {
+        type: Number,
+      },
+      reps: {
+        type: Number,
+      },
+      sets: {
+        type: Number,
+      },
+    },
+  ],
 });
 
 // TODO: here add workoutSchema.methods.<function> () {}
