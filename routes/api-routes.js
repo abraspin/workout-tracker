@@ -5,7 +5,9 @@ module.exports = function (app) {
   //
   //GET ALL WORKOUTS
   app.get("/api/workouts", (req, res) => {
-    db.find({})
+    console.log("GET api/workouts req.body: ", req.body);
+
+    db.Workout.find({})
       .then((workoutData) => {
         res.json(workoutData);
       })
@@ -14,10 +16,44 @@ module.exports = function (app) {
       });
   });
 
+  //
+  //GET ALL WORKOUTS with range (why?)
+  app.get("/api/workouts/range", (req, res) => {
+    console.log("GET api/workouts/range req.body: ", req.body);
+    db.Workout.find({})
+      .then((workoutData) => {
+        res.json(workoutData);
+      })
+      .catch((err) => {
+        res.status(400).json(err);
+      });
+  });
+  // EDIT A WORKOUT (AKA ADD AN EXERCISE TO IT)
+  app.put("/api/workouts/:id", ({ body, params }, res) => {
+    console.log("update api/workouts req.body: ", body);
+
+    db.Workout.findByIdAndUpdate(
+      {
+        _id: params.id,
+      },
+      {
+        $push: {
+          exercises: body,
+        },
+      }
+    )
+      .then((updatedWorkout) => {
+        res.json(updatedWorkout);
+      })
+      .catch((err) => {
+        res.status(400).json(err);
+      });
+  });
+
   // POST A NEW WORKOUT
   app.post("/api/workouts", ({ body }, res) => {
-    app
-      .create(body)
+    console.log("POST api/workouts req.body: ", body);
+    db.Workout.create(body)
       .then((data) => {
         res.json(data);
       })
@@ -25,4 +61,6 @@ module.exports = function (app) {
         res.status(400).json(err);
       });
   });
+
+  //
 };
