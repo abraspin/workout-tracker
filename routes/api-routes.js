@@ -1,11 +1,10 @@
-const router = require("express").Router();
 const db = require("../models");
 
 //exporting  api routes
-module.exports = (app) => {
+module.exports = function (app) {
   //
   //GET ALL WORKOUTS
-  app.get("/api/transaction", (req, res) => {
+  app.get("/api/workouts", (req, res) => {
     db.find({})
       .then((workoutData) => {
         res.json(workoutData);
@@ -16,8 +15,8 @@ module.exports = (app) => {
   });
 
   // POST A NEW WORKOUT
-  router.post("/api/workouts", ({ body }, res) => {
-    router
+  app.post("/api/workouts", ({ body }, res) => {
+    app
       .create(body)
       .then((data) => {
         res.json(data);
