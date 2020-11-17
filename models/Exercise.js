@@ -11,11 +11,10 @@ const exerciseSchema = new mongoose.Schema({
     type: String,
   },
   distance: {
-    type: number,
+    type: Number,
   },
-
   duration: {
-    type: number,
+    type: Number,
   },
 });
 
