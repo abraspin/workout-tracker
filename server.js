@@ -6,6 +6,7 @@ const PORT = process.env.PORT || 3000;
 
 const app = express();
 
+// morgan logs server events
 app.use(logger("dev"));
 
 app.use(express.urlencoded({ extended: true }));
@@ -22,8 +23,8 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", {
 });
 
 // routes
-require("./routes/api-routes")(app);
-require("./routes/html-routes")(app);
+require("./routes/api-routes.js")(app);
+require("./routes/html-routes.js")(app);
 
 app.listen(PORT, () => {
   console.log(`App running on port ${PORT}!`);
