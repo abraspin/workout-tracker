@@ -1,21 +1,17 @@
 const mongoose = require("mongoose");
 
-const Schema = mongoose.Schema;
+// const Schema = mongoose.Schema;
+// const WorkoutSchema = new Schema({
 
-const WorkoutSchema = new Schema({
-  name: {
-    type: String,
+const workoutSchema = new mongoose.Schema({
+  day: {
+    type: Date,
   },
-  //   value: {
-  //     type: Number,
-  //     required: "Enter an amount",
-  //   },
-  //   date: {
-  //     type: Date,
-  //     default: Date.now,
-  //   },
+  exercises: { type: Array },
 });
 
-//export workout model built from schema? (name, schema)
-const Workout = mongoose.model("Workout", WorkoutSchema);
+// TODO: here add workoutSchema.methods.<function> () {}
+
+// compile workout schema into a model
+const Workout = mongoose.model("Workout", workoutSchema);
 module.exports = Workout;
