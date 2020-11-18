@@ -1,19 +1,6 @@
 let mongoose = require("mongoose");
 let db = require("../models");
 
-// mongoose.connect("mongodb://localhost/workout", {
-//   useNewUrlParser: true,
-//   useFindAndModify: false
-// });
-
-// TODO:  THIS IS WHAT example LOOKS LIKE
-// const dotenv = require("dotenv").config();
-// const uri = process.env.ATLAS_URI;
-// mongoose.connect(uri, {
-//   useNewUrlParser: true,
-//   useFindAndModify: false
-// });
-
 // Update connection to look for mongoDB atlas variable for DB reference
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", {
   useNewUrlParser: true,
