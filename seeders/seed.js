@@ -6,7 +6,7 @@ let db = require("../models");
 //   useFindAndModify: false
 // });
 
-// TODO:  THIS IS WHAT SHANE'S LOOKS LIKE
+// TODO:  THIS IS WHAT example LOOKS LIKE
 // const dotenv = require("dotenv").config();
 // const uri = process.env.ATLAS_URI;
 // mongoose.connect(uri, {
