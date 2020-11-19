@@ -51,7 +51,7 @@ Please contact me if you find an issue or have a suggestion for future developme
 
 
 
-Just visit ![the Heroku Deployment](https://guarded-sea-63704.herokuapp.com/) to begin!  
+Just visit ![the Heroku deployed app](https://guarded-sea-63704.herokuapp.com/) to begin!  
 
 Start a new workout or add exercises to an existing one. Check out the Dashboard to see your cumulative stats!
 
@@ -71,7 +71,7 @@ Start a new workout or add exercises to an existing one. Check out the Dashboard
 ---
 
 ## License
-![MIT License](https://github.com/abraspin/workout-tracker/LICENSE)
+![MIT License](https://github.com/abraspin/workout-tracker/blob/main/LICENSE)
 
 ---
 
