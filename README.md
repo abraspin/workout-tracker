@@ -2,7 +2,6 @@
  ![MIT_License License](https://img.shields.io/badge/License-MIT_License-brightgreen)
  ![Repo-Code_Composition](https://img.shields.io/github/languages/top/abraspin/workout-tracker ) 
  ![Repo Size](https://img.shields.io/github/repo-size/abraspin/workout-tracker)
- ![Open Issues](https://img.shields.io/github/issues/abraspin/workout-tracker)
   
 
 A full-stack fitness tracker app built on NodeJS using ExpressJS, MongoDB, and Mongoose.  
