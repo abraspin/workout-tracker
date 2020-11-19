@@ -5,8 +5,6 @@ module.exports = function (app) {
   //
   //GET ALL WORKOUTS
   app.get("/api/workouts", (req, res) => {
-    console.log("GET api/workouts req.body: ", req.body);
-
     db.Workout.find({})
       .then((workoutData) => {
         res.json(workoutData);
@@ -19,7 +17,6 @@ module.exports = function (app) {
   //
   //GET ALL WORKOUTS with range (why?)
   app.get("/api/workouts/range", (req, res) => {
-    console.log("GET api/workouts/range req.body: ", req.body);
     db.Workout.find({})
       .then((workoutData) => {
         res.json(workoutData);
@@ -34,8 +31,6 @@ module.exports = function (app) {
 
   // EDIT A WORKOUT (AKA ADD AN EXERCISE TO IT)
   app.put("/api/workouts/:id", ({ body, params }, res) => {
-    console.log("update api/workouts req.body: ", body);
-
     db.Workout.findByIdAndUpdate(
       {
         _id: params.id,
@@ -56,7 +51,6 @@ module.exports = function (app) {
 
   // POST A NEW WORKOUT
   app.post("/api/workouts", ({ body }, res) => {
-    console.log("POST api/workouts req.body: ", body);
     db.Workout.create(body)
       .then((data) => {
         res.json(data);
