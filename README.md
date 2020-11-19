@@ -37,7 +37,7 @@ Please contact me if you find an issue or have a suggestion for future developme
  
 ## User Story
 
->As a user, I want to be able to view create and track daily workouts.  
+>As a user, I want to be able to view, create, and track daily workouts.  
 >I want to be able to log multiple exercises in a workout on a given day.  
 >I should also be able to track the name, type, weight, sets, reps, and duration of exercise.   
 >If the exercise is a cardio exercise, I should be able to track my distance traveled.  
@@ -51,14 +51,14 @@ Please contact me if you find an issue or have a suggestion for future developme
 
 
 
-Just visit ![the Heroku Deployment](https://guarded-sea-63704.herokuapp.com/) to begin!  
+Just visit ![the Heroku deployed app](https://guarded-sea-63704.herokuapp.com/) to begin!  
 
 Start a new workout or add exercises to an existing one. Check out the Dashboard to see your cumulative stats!
 
 
 ---
 
-## Examples
+## Example
 
 ![Screenshot of deployed app](./app-screenshot.png)
 
@@ -71,12 +71,16 @@ Start a new workout or add exercises to an existing one. Check out the Dashboard
 ---
 
 ## License
-![MIT License](https://github.com/abraspin/workout-tracker/LICENSE)
+![MIT License](https://github.com/abraspin/workout-tracker/blob/main/LICENSE)
 
 ---
 
 ## Credits
-* Node.js Project [MIT license](https://raw.githubusercontent.com/nodejs/node/master/LICENSE)   
+* NodeJS Project [MIT license](https://raw.githubusercontent.com/nodejs/node/master/LICENSE)   
+* Express Morgan [MIT license](https://github.com/expressjs/morgan/blob/master/LICENSE)
+* ChartJS [MIT license](https://github.com/chartjs/Chart.js/blob/master/LICENSE.md)
+* MongoDB [SSPL](https://www.mongodb.com/licensing/server-side-public-license)
+* MongoDB Mongoose [MIT license](https://github.com/Automattic/mongoose/blob/master/LICENSE.md)
 * ExpressJS [MIT license](https://github.com/expressjs/express/blob/HEAD/LICENSE)   
 * Node Package Manager (npm) [Artistic License 2.0](https://www.npmjs.com/policies/npm-license)  
 
