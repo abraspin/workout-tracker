@@ -1,4 +1,4 @@
-// export models (this may not be necessary?)
+// export models
 module.exports = {
   Workout: require("./Workout"),
 };

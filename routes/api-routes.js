@@ -15,7 +15,7 @@ module.exports = function (app) {
   });
 
   //
-  //GET ALL WORKOUTS with range (why?)
+  //GET ALL WORKOUTS with range
   app.get("/api/workouts/range", (req, res) => {
     db.Workout.find({})
       .then((workoutData) => {
@@ -25,9 +25,6 @@ module.exports = function (app) {
         res.status(400).json(err);
       });
   });
-
-  // GET WORKOUT BY ID
-  //TODO: is this endpoint necessary? I don't think so
 
   // EDIT A WORKOUT (AKA ADD AN EXERCISE TO IT)
   app.put("/api/workouts/:id", ({ body, params }, res) => {
