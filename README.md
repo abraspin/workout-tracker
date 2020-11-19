@@ -58,7 +58,7 @@ Start a new workout or add exercises to an existing one. Check out the Dashboard
 
 ---
 
-## Examples
+## Example
 
 ![Screenshot of deployed app](./app-screenshot.png)
 
