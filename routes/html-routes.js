@@ -16,10 +16,8 @@ module.exports = function (app) {
     res.sendFile(path.join(__dirname, "../public/stats.html"));
   });
 
-  // FIXME: Redundant/catch all routes to index.html
+  // // Catch all routes to index.html (not currently in use)
   // app.get("/*", (req, res) => {
-  //   res.sendFile(path.join(__dirname, "../public/index.html")).catch((err) => {
-  //     res.status(400).json(err);
-  //   });
+  //   res.sendFile(path.join(__dirname, "../public/index.html"));
   // });
 };
