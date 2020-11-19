@@ -77,6 +77,10 @@ Start a new workout or add exercises to an existing one. Check out the Dashboard
 
 ## Credits
 * Node.js Project [MIT license](https://raw.githubusercontent.com/nodejs/node/master/LICENSE)   
+* Express Morgan [MIT license](https://github.com/expressjs/morgan/blob/master/LICENSE)
+* ChartJS [MIT license](https://github.com/chartjs/Chart.js/blob/master/LICENSE.md)
+* MongoDB [SSPL](https://www.mongodb.com/licensing/server-side-public-license)
+* MongoDB Mongoose [MIT license](https://github.com/Automattic/mongoose/blob/master/LICENSE.md)
 * ExpressJS [MIT license](https://github.com/expressjs/express/blob/HEAD/LICENSE)   
 * Node Package Manager (npm) [Artistic License 2.0](https://www.npmjs.com/policies/npm-license)  
 
